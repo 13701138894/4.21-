@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding:0;
+        }
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: #0ff;
+            position: absolute;
+        }
+    </style>
+</head>
+<body>
+    <button>111</button>
+    <div></div>
+    <script src="dongHua.js"></script>
+    <script>
+        var button=document.querySelector('button');
+        var div=document.querySelector('div');
+        button.onclick=function(){
+            move(div,1000,30);
+        }
+    </script>
+</body>
+</html>
